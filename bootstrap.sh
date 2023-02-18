@@ -1,2 +1,2 @@
-brew install emacs
+sudo apt-get install -y emacs
 git config --global core.editor "emacs"
