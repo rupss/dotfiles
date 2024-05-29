@@ -11,3 +11,7 @@ touch  ~/.ssh/config
 echo "Host github.com" >> ~/.ssh/config
 echo "  AddKeysToAgent yes" >> ~/.ssh/config
 echo "  IdentityFile ~/.ssh/id_ed25519" >> ~/.ssh/config
+
+
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
